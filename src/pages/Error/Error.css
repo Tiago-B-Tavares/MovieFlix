@@ -3,14 +3,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 50px auto;
+    width: 100%;
+    height: calc(100vh - 60px);
 }
-.not-found h1, h2{
-    padding: 10px 0;
+.not-found h1{
+   font-size: 120px;
 }
 .not-found a{
     font-size: 18px;
-    padding:8px;
+    padding:10px;
+    margin-top: 14px;
     background-color: #116feb;
     color: #fff;
     text-decoration: none;

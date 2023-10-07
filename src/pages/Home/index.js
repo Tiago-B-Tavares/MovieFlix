@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import api from '../../services/api'
 import './home.css';
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 ///movie/now_playing?api_key=b846534ca04f9d422f16046ceb1a619c&language=pt-BR
 function Home() {
@@ -18,10 +18,10 @@ function Home() {
         }
       })
       //console.log(response.data.results.slice(0, 10));
-      setFilmes(response.data.results.slice(0, 10))
+      setFilmes(response.data.results.slice(0, 20))
     }
     loadFilmes();
-  }, []);
+  });
 
 
 

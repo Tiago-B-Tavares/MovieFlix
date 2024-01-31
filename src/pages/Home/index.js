@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import { Link, Navigate } from "react-router-dom";
 import api from '../../services/api'
 import './home.css';
-import { Link, Navigate } from "react-router-dom";
 
 ///movie/now_playing?api_key=b846534ca04f9d422f16046ceb1a619c&language=pt-BR
 function Home() {
@@ -22,8 +22,6 @@ function Home() {
     }
     loadFilmes();
   });
-
-
 
   return (
     <div className="container">

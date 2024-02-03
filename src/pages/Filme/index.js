@@ -35,10 +35,19 @@ function Filme() {
   }, [navigate, id]);
 
   function salvarFilme() {
-    alert('teste');
+    const minhaLista = localStorage.getItem("movie@flix");
+    let filmesSalvos = JSON.parse(minhaLista) || [];
+    const filmesFavoritos = filmesSalvos.some(
+      (salvoFavorito) => salvoFavorito.id === filme.id
+    );
+    if (filmesFavoritos) {
+      alert("Esse filme já está nos favoritos");
+    } else {
+      filmesSalvos.push(filme);
+      localStorage.setItem("movie@flix", JSON.stringify(filmesSalvos));
+      alert("Filme salvo com sucesso!!");
+    }
   }
-
-
 
   if (loading) {
     return (
@@ -47,7 +56,7 @@ function Filme() {
       </div>
     );
   }
- 
+
   return (
     <div className="filme-info">
       <h1>{filme.title}</h1>

@@ -47,3 +47,9 @@
   color: #116feb;
   margin:0 50px ;
 }
+.sem-favoritos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}

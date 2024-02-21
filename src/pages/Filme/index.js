@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 import "./filme-info.css";
 import api from "../../services/api";
 
@@ -41,11 +42,11 @@ function Filme() {
       (salvoFavorito) => salvoFavorito.id === filme.id
     );
     if (filmesFavoritos) {
-      alert("Esse filme já está nos favoritos");
+      toast.warn('Esse filme já está nos favoritos')
     } else {
       filmesSalvos.push(filme);
       localStorage.setItem("movie@flix", JSON.stringify(filmesSalvos));
-      alert("Filme salvo com sucesso!!");
+      toast.success("Filme salvo com sucesso");
     }
   }
 

@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin: 10 auto;
   
 }
@@ -29,10 +28,10 @@
 .meus-filmes ul li{
   list-style: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  justify-content: space-between;
   width: 100%;
+  margin-top: 10px;  
 
 }
 
@@ -46,5 +45,5 @@
 .meus-filmes div a {
   text-decoration: none;
   color: #116feb;
-  margin-right: 14px;
+  margin:0 50px ;
 }

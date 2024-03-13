@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 function Header() {
     return(
         <header>
-           <Link className="logo" to='/'> Tiggas Flix</Link>
-           <Link className="favoritos" to='/favoritos'> Meus Filmes</Link>
+            <div className="container">
+                <Link className="logo" to='/'> Tiggas Flix</Link>
+                <Link className="favoritos" to='/favoritos'> Meus Filmes</Link>
+            </div>  
         </header>
     )
 }

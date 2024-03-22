@@ -1,5 +1,5 @@
 
-.container{
+.containe{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,12 +24,16 @@
 
 .lista-filmes img{
     
-    max-width: 450px;
-    max-height: 340px;
+    max-width: 350px;
+    max-height: 240px;
     object-fit: cover;
     display: block;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+  
+}
+figure{
+    background-image: linear-gradient(to left, black);
 }
 .lista-filmes a{
     display: flex;
@@ -37,12 +41,9 @@
     align-items: center;
     padding: 10px 0;
     font-size: 24px;
-    background-color: #116feb;
+    
     text-decoration: none;
     color:#fff;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-}
-figure{
-    border: 2px red solid;
 }

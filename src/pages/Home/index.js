@@ -23,8 +23,8 @@ function Home() {
   });
 
   return (
-    <div className="container">
-      <div className="lista-filmes">
+    <div className="container-fluid">
+      <div className=" container lista-filmes">
         {filmes.map((filme) => {
           return (
             <article key={filme.id}>
@@ -34,9 +34,8 @@ function Home() {
                   src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`}
                   alt={filme.title}
                 />
+                    <Link className="btn btn-dark" to={`/filme/${filme.id}`}>Acessar</Link>
               </figure>
-
-              <Link to={`/filme/${filme.id}`}>Acessar</Link>
             </article>
           );
         })}

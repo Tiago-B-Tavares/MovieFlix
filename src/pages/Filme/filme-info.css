@@ -25,32 +25,9 @@
 
 .filme-info span {
     margin: 8px 0;
+}
 
-}
-.area-buttons button{
-    margin: 14px 12px 0px 0px;
-    font-size: 20px;
-    border-color:#116feb ;
-    outline: none;
-    padding: 8px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.5s;
-    color: #116feb;
-
-}
-.area-buttons button:hover{
-    background-color: #116feb;
-    color: #fff;
-    
-}
-.area-buttons a{
-    text-decoration: none;
-    color: #116feb;
-    transition: all 0.5s;
-
-}
-.area-buttons a:hover{
-  
-    color: #fff;
+button {
+    border: none;
+    margin:10px 10px;
 }
